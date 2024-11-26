@@ -90,6 +90,11 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
+            type:'docSidebar',
+            sidebarId: 'htmlSidebar',
+            label: 'Html&Css',
+          },
+          {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
             position: 'right',
@@ -146,6 +151,9 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
+    markdown:{
+      format: 'detect'
+    }
 };
 
 export default config;
