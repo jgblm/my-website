@@ -15,7 +15,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://blog.jgblm.top',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -83,17 +83,17 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
             type:'docSidebar',
             sidebarId: 'htmlSidebar',
             label: 'Html&Css',
           },
+          {
+            type:'docSidebar',
+            sidebarId: 'mobileSidebar',
+            label: '移动web',
+          },
+          {to: '/blog', label: 'Blog', position: 'left'},
+
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -158,8 +158,6 @@ const config = {
       {
         debug: true,
         offlineModeActivationStrategies: [
-          'appInstalled',
-          'standalone',
           'queryString',
         ],
         pwaHead: [
