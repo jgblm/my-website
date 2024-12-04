@@ -92,6 +92,11 @@ const config = {
             sidebarId: 'mobileSidebar',
             label: '移动web',
           },
+          {
+            type:'docSidebar',
+            sidebarId: 'javascriptSidebar',
+            label: 'JavaScript',
+          },
           {to: '/blog', label: 'Blog', position: 'left'},
 
           {

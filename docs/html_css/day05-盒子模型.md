@@ -13,16 +13,127 @@
 ![1680321408957](assets/1680321408957.png)
 
 ```css
-li:first-child {
-  background-color: green;
-}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 结构伪类选择器 */
+    /* 1.选择第一个li */
+    ul li:first-child {
+      color: pink;
+    }
+
+    /* 2. 最后一个小li */
+    ul li:last-child {
+      color: green;
+    }
+
+    /* 3. 选择其中任意一个 */
+    ul li:nth-child(6) {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ul>li{第$个}*8 -->
+  <ul>
+    <li>我是第1个小li</li>
+    <li>我是第2个小li</li>
+    <li>我是第3个小li</li>
+    <li>我是第4个小li</li>
+    <li>我是第5个小li</li>
+    <li>我是第6个小li</li>
+    <li>我是第7个小li</li>
+    <li>我是第8个小li</li>
+  </ul>
+</body>
+
+</html>
 ```
+
+ ![68307745453](assets/1683077454538.png)
 
 ### :nth-child(公式) 
 
 ![1680321448162](assets/1680321448162.png)
 
 > 提示：公式中的n取值从 **0** 开始。 
+
+~~~html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 公式 */
+    /* 2n 是偶数个 */
+
+
+    ul li:nth-child(2n) {
+      background-color: #eee;
+    }
+
+    ul li:hover {
+      background-color: #bbb;
+    }
+
+
+    /* 2n+1 奇数 */
+    /* ul li:nth-child(2n + 1) {
+      background-color: #eee;
+    } */
+
+    /* 5n 5的倍数 */
+    /* ul li:nth-child(5n) {
+      background-color: #eee;
+    } */
+
+    /* -n+5 选择第5个以前的 包含第5个 */
+    /* ul li:nth-child(-n + 5) {
+      background-color: #eee;
+    } */
+
+    /* n+5 选择第5个以后的 包含第5个 */
+    /* ul li:nth-child(n + 5) {
+      background-color: #eee;
+    } */
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li>我是第1个小li</li>
+    <li>我是第2个小li</li>
+    <li>我是第3个小li</li>
+    <li>我是第4个小li</li>
+    <li>我是第5个小li</li>
+    <li>我是第6个小li</li>
+    <li>我是第7个小li</li>
+    <li>我是第8个小li</li>
+    <li>我是第9个小li</li>
+    <li>我是第10个小li</li>
+    <li>我是第11个小li</li>
+    <li>我是第12个小li</li>
+    <li>我是第13个小li</li>
+    <li>我是第14个小li</li>
+    <li>我是第15个小li</li>
+  </ul>
+</body>
+
+</html>
+~~~
+
+
 
 ### 伪元素选择器 
 
@@ -152,6 +263,40 @@ div {
 
 > 技巧：从**上**开始**顺时针**赋值，当前方向没有数值则与**对面取值相同**。 
 
+~~~html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      /* 1. 手动去减 */
+      /* width: 160px;
+      height: 160px; */
+      /* 2. css3 盒子模型 box-sizing: border-box */
+      box-sizing: border-box;
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+      border: 10px solid red;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">qwe</div>
+</body>
+
+</html>
+~~~
+
+
+
 ### 尺寸计算
 
 ![1680331322935](assets/1680331322935.png)
@@ -187,6 +332,13 @@ div {
   background-color: pink;
 }
 ```
+
+>1. 行内和行内块元素水平居中对齐，给块级的父元素添加  tac 
+>2. 块级元素水平居中对齐： 让盒子的`左右外边距`设置为 auto 就可以了。  margin: auto;
+>   - 小米  margin-left: auto;  margin-right: auto;
+>   - 京东/淘宝： margin： 0 auto；
+
+
 
 ### 清除默认样式 
 

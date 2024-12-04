@@ -753,4 +753,912 @@ css
 }
 ```
 
+## 07-热门品牌-布局
+
+![1680345437806](assets/1680345437806.png)
+
+### HTML结构
+
+```html
+<!-- 热门品牌 brand -->
+  <div class="brand">
+    <div class="wrapper">
+      <!-- hd  -->
+      <div class="hd">
+        <h2>热门品牌
+          <span>国际经典 品质认证</span>
+        </h2>
+
+      </div>
+    </div>
+  </div>
+```
+
+### CSS样式
+
+```css
+/* 热门品牌 */
+.brand {
+  height: 468px;
+  background-color: #f5f5f5;
+}
+```
+
+## 热门品牌-头部右侧制作
+
+html
+
+~~~html
+<!-- hd  -->
+<div class="hd">
+  <h2>热门品牌
+    <span>国际经典 品质认证</span>
+  </h2>
+  <!-- 按钮   button-->
+  <div class="btn">
+    <a href="javascript:;" class="btnleft">
+      <i class="iconfont icon-arrow-left-bold"></i>
+    </a>
+    <a href="javascript:;" class="btnright">
+      <i class="iconfont icon-arrow-right-bold"></i>
+    </a>
+  </div>
+</div>
+~~~
+
+css
+
+~~~css
+/* brand里面的hd 加相对定位 */
+.brand .hd {
+  position: relative;
+}
+
+.brand .btn {
+  position: absolute;
+  top: 85px;
+  right: 0;
+  display: flex;
+
+}
+
+.brand .btn a {
+  width: 20px;
+  height: 20px;
+  background-color: #e2e2e2;
+  margin-left: 12px;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+}
+
+.brand .btn .btnright {
+  background-color: var(--lv);
+}
+~~~
+
+
+
+## 热门品牌-内容
+
+### HTML结构
+
+```html
+  <!-- 热门品牌 brand -->
+  <div class="brand">
+    <div class="wrapper">
+      <!-- hd  -->
+      <div class="hd">
+        <h2>热门品牌
+          <span>国际经典 品质认证</span>
+        </h2>
+        <!-- 按钮   button-->
+        <div class="btn">
+          <a href="javascript:;" class="btnleft">
+            <i class="iconfont icon-arrow-left-bold"></i>
+          </a>
+          <a href="javascript:;" class="btnright">
+            <i class="iconfont icon-arrow-right-bold"></i>
+          </a>
+        </div>
+      </div>
+      <!-- bd  -->
+      <div class="bd">
+        <ul>
+          <li><a href="#"><img src="./uploads/hot1.png" alt=""></a></li>
+          <li><a href="#"><img src="./uploads/hot2.png" alt=""></a></li>
+          <li><a href="#"><img src="./uploads/hot3.png" alt=""></a></li>
+          <li><a href="#"><img src="./uploads/hot4.png" alt=""></a></li>
+          <li><a href="#"><img src="./uploads/hot5.png" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+```
+
+### CSS样式
+
+```css
+/* 热门品牌 */
+.brand {
+  height: 468px;
+  background-color: #f5f5f5;
+  margin-top: 50px;
+}
+
+/* brand里面的hd 加相对定位 */
+.brand .hd {
+  position: relative;
+}
+
+.brand .btn {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  display: flex;
+
+}
+
+.brand .btn a {
+  width: 20px;
+  height: 20px;
+  background-color: #e2e2e2;
+  margin-left: 12px;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+}
+
+.brand .btn .btnright {
+  background-color: var(--lv);
+}
+
+.brand .bd li {
+  width: 244px;
+  height: 306px;
+}
+
+```
+
+## 生鲜-标题
+
+![1680345419866](assets/1680345419866.png)
+
+### HTML结构
+
+```html
+<!-- 生鲜模块 -->
+  <div class="wrapper">
+    <!-- 上侧 hd  -->
+    <div class="hd">
+      <h2>生鲜</h2>
+      <ul>
+        <li><a href="#">热门</a></li>
+        <li><a href="#">蔬菜</a></li>
+        <li><a href="#">肉禽蛋</a></li>
+        <li><a href="#">水果</a></li>
+        <li><a href="#">海鲜</a></li>
+        <li><a href="#">零食</a></li>
+        <li><a href="#">饮料</a></li>
+      </ul>
+
+      <a href="#" class="all">
+        查看全部
+        <i class="iconfont icon-arrow-right-bold"></i>
+      </a>
+    </div>
+  </div>
+
+```
+
+### CSS样式
+
+```css
+/* 生鲜 */
+.hd ul {
+  display: flex;
+}
+```
+
+## 生鲜头部制作完成
+
+html
+
+~~~html
+ <!-- 上侧 hd  -->
+    <div class="hd">
+      <h2>生鲜</h2>
+      <ul>
+        <li><a href="#">热门</a></li>
+        <li><a href="#">蔬菜</a></li>
+        <li><a href="#">肉禽蛋</a></li>
+        <li><a href="#">水果</a></li>
+        <li><a href="#">海鲜</a></li>
+        <li><a href="#">零食</a></li>
+        <li><a href="#">饮料</a></li>
+        <li><a href="#">海鲜</a></li>
+        <li><a href="#">零食</a></li>
+        <li><a href="#">饮料</a></li>
+      </ul>
+
+      <a href="#" class="all">
+        查看全部
+        <i class="iconfont icon-arrow-right-bold"></i>
+      </a>
+    </div>
+~~~
+
+css
+
+~~~css
+/* 让生鲜模块里面的li 一行显示 */
+.hd ul {
+  display: flex;
+  margin-right: 65px;
+}
+
+.hd ul li {
+  margin-right: 13px;
+}
+
+.hd ul li a {
+  padding: 0 5px;
+}
+
+/* 鼠标经过添加底色和文字颜色 */
+.hd ul li a:hover {
+  background-color: var(--lv);
+  color: #fff;
+}
+
+.fresh .hd h2 {
+  flex: 1;
+}
+~~~
+
+## 生鲜-内容布局
+
+### HTML结构
+
+```html
+<!-- 内容区域 -->
+<div class="content">
+  <div class="left">
+    <a href="#"><img src="./uploads/fresh_left.png" alt=""></a>
+  </div>
+  <div class="right"></div>
+</div>
+```
+
+### CSS样式
+
+```css
+/* 生鲜内容 */
+/* 内容区域 */
+.fresh .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fresh .content .left {
+  width: 248px;
+  height: 610px;
+  /* background-color: pink; */
+}
+
+.fresh .content .right {
+  width: 968px;
+  height: 610px;
+  background-color: skyblue;
+}
+```
+
+## 生鲜-内容小li搭建
+
+html
+
+~~~html
+<div class="right">
+  <ul>
+    <li>1</li>
+
+  </ul>
+</div>
+~~~
+
+css
+
+~~~css
+.fresh .content .right {
+  width: 968px;
+  height: 610px;
+  background-color: skyblue;
+}
+
+.fresh .content .right ul {
+  display: flex;
+  /* 强制换行 */
+  flex-wrap: wrap;
+}
+
+.fresh .content .right li {
+  width: 242px;
+  height: 304px;
+  background-color: pink;
+  /* 颜色透明 transparent */
+  border: 2px solid transparent;
+}
+
+.fresh .content .right li:hover {
+  /* border: 2px solid var(--lv); */
+  border-color: var(--lv);
+}
+~~~
+
+
+
+## 生鲜-产品内容
+
+### HTML结构
+
+```html
+ <!-- 内容区域 -->
+    <div class="content">
+      <div class="left">
+        <a href="#"><img src="./uploads/fresh_left.png" alt=""></a>
+      </div>
+      <div class="right">
+        <ul>
+          <li>
+            <a href="#">
+              <!-- 图片 -->
+              <div class="pic">
+                <img src="./uploads/fresh1.png" alt="">
+              </div>
+              <!-- 信息 -->
+              <div class="info">
+                <h5>双味千层，手抓饼烤肉组合</h5>
+                <p>240g/袋 4片装</p>
+                <p>加热即食</p>
+              </div>
+              <!-- 价格  -->
+              <div class="price">
+                ¥ <span>88.99</span>
+              </div>
+            </a>
+            <!-- 发现更多宝贝 -->
+            <div class="find">
+              <h4>找相似</h4>
+              <a href="#">
+                发现更多宝贝
+                <i class="iconfont icon-arrow-right-bold"></i>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+```
+
+### CSS样式
+
+```css
+
+/* 内容区域 */
+.fresh .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fresh .content .left {
+  width: 248px;
+  height: 610px;
+  /* background-color: pink; */
+}
+
+.fresh .content .right {
+  width: 968px;
+  height: 610px;
+  /* background-color: skyblue; */
+}
+
+.fresh .content .right ul {
+  display: flex;
+  /* 强制换行 */
+  flex-wrap: wrap;
+}
+
+.fresh .content .right li {
+  overflow: hidden;
+  position: relative;
+  width: 242px;
+  height: 304px;
+  /* background-color: pink; */
+  /* 颜色透明 transparent */
+  border: 2px solid transparent;
+
+}
+
+.fresh .content .right li:hover {
+  /* border: 2px solid var(--lv); */
+  border-color: var(--lv);
+}
+
+.fresh .content .right li>a {
+  display: block;
+  height: 100%;
+  padding: 10px 0 0 20px;
+}
+
+.fresh .content .pic {
+  width: 200px;
+  height: 180px;
+  background-color: purple;
+}
+
+.fresh .content .info {
+  margin-top: 14px;
+  font-size: 16px;
+  line-height: 19px;
+
+}
+
+.fresh .content .info h5 {
+  font-size: 16px;
+}
+
+.fresh .content .price {
+  margin-top: 5px;
+  font-size: 15px;
+  color: #AF2F22;
+}
+
+.fresh .content .price span {
+  font-size: 22px;
+}
+
+.fresh .content .find {
+  position: absolute;
+  left: 0;
+  bottom: -84px;
+  width: 242px;
+  height: 84px;
+  background-color: var(--lv);
+  padding: 15px 55px 0;
+  text-align: center;
+  /* 谁做动画（过渡）给谁加 */
+  transition: all .3s;
+}
+
+.fresh .content .right li:hover .find {
+  bottom: 0;
+}
+
+.fresh .content .find h4 {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.11);
+  color: #fff;
+  padding-bottom: 4px;
+  margin-bottom: 4px;
+  font-size: 18px;
+}
+
+.fresh .content .find a {
+  color: #fff;
+  font-size: 13px;
+}
+
+.fresh .content .find a i {
+  font-size: 13px;
+}
+```
+
+
+
+## 快捷键
+
+> 全部折叠：
+>
+> 先按 ctrl + k   接着   ctrl + 0     
+>
+> 全部展开：
+>
+> ctrl+ k   接着 ctrl+ j
+
+
+
+
+
+## 最新专题-布局
+
+![1680345389305](assets/1680345389305.png)
+
+### HTML结构
+
+```html
+<!-- 最新专题 -->
+<!-- 最新专题 -->
+  <div class="wrapper news">
+    <!-- 上侧 hd  -->
+    <div class="hd">
+      <h2>最新专题
+      </h2>
+      <a href="#" class="all">
+        查看全部
+        <i class="iconfont icon-arrow-right-bold"></i>
+      </a>
+    </div>
+    <!-- 下部分 bd  -->
+    <div class="bd">
+      <ul>
+        <li>
+          <div class="pic">
+            <img src="./uploads/topic1.png" alt="">
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+
+```
+
+### CSS样式
+
+```css
+/* 最新专题 */
+/* 最新专题 */
+.news {
+  margin-bottom: 50px;
+}
+
+.news .bd ul li {
+  width: 405px;
+  height: 355px;
+  background-color: pink;
+}
+
+.news .bd ul li .pic {
+  width: 405px;
+  height: 288px;
+  background-color: skyblue;
+}
+```
+
+## 最新专题-内容
+
+### HTML结构
+
+```html
+<ul>
+  <li>
+    <a href="#">
+      <div class="pic">
+        <img src="./uploads/topic1.png" alt="">
+      </div>
+      <div class="txt">
+        <div class="left">
+          <p>
+            <i class="iconfont icon-favorites-fill"></i>
+            <span>1220</span>
+          </p>
+          <p>
+            <i class="iconfont icon-browse"></i>
+            <span>1800</span>
+          </p>
+        </div>
+        <div class="right">
+          <p>
+            <i class="iconfont icon-comment"></i>
+            <span>246</span>
+          </p>
+        </div>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <div class="pic">
+        <img src="./uploads/topic2.png" alt="">
+      </div>
+      <div class="txt">
+        <div class="left">
+          <p>
+            <i class="iconfont icon-favorites-fill"></i>
+            <span>1220</span>
+          </p>
+          <p>
+            <i class="iconfont icon-browse"></i>
+            <span>1800</span>
+          </p>
+        </div>
+        <div class="right">
+          <p>
+            <i class="iconfont icon-comment"></i>
+            <span>246</span>
+          </p>
+        </div>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <div class="pic">
+        <img src="./uploads/topic3.png" alt="">
+      </div>
+      <div class="txt">
+        <div class="left">
+          <p>
+            <i class="iconfont icon-favorites-fill"></i>
+            <span>1220</span>
+          </p>
+          <p>
+            <i class="iconfont icon-browse"></i>
+            <span>1800</span>
+          </p>
+        </div>
+        <div class="right">
+          <p>
+            <i class="iconfont icon-comment"></i>
+            <span>246</span>
+          </p>
+        </div>
+      </div>
+    </a>
+  </li>
+</ul>
+```
+
+### CSS样式
+
+```css
+.topic-bd ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topic-bd li {
+  width: 405px;
+  height: 355px;
+  background-color: pink;
+}
+
+.topic-bd .pic {
+  position: relative;
+  width: 405px;
+  height: 288px;
+}
+
+.topic-bd .txt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  width: 405px;
+  height: 67px;
+  /* background-color: skyblue; */
+  font-size: 14px;
+  color: #666;
+}
+
+.topic-bd .txt .left {
+  display: flex;
+}
+
+.topic-bd .txt .left p {
+  margin-right: 20px;
+}
+
+.topic-bd .txt .left p:nth-child(1) i {
+  color: #AA2113;
+}
+```
+
+
+
+## 最新专题完成
+
+~~~html
+  <!-- 最新专题 -->
+  <div class="wrapper news">
+    <!-- 上侧 hd  -->
+    <div class="hd">
+      <h2>最新专题
+      </h2>
+      <a href="#" class="all">
+        查看全部
+        <i class="iconfont icon-arrow-right-bold"></i>
+      </a>
+    </div>
+    <!-- 下部分 bd  -->
+    <div class="bd">
+      <ul>
+        <li>
+          <!-- 图片区域 -->
+          <div class="pic">
+            <img src="./uploads/topic1.png" alt="">
+
+            <div class="txt">
+              <div class="left">
+                <h5>吃这些美食才不算辜负自己</h5>
+                <p>餐厨起居洗护好物</p>
+              </div>
+              <div class="right">
+                ¥29.99
+              </div>
+            </div>
+          </div>
+          <!-- 说明区域 -->
+          <div class="desc">
+            <p>
+              <span>
+                <i class="iconfont icon-fabulous"></i>
+                1200
+              </span>
+              <span>
+                <i class="iconfont icon-browse"></i>
+                1800
+              </span>
+            </p>
+            <p>
+
+              <span>
+                <i class="iconfont icon-comment"></i>
+                246
+              </span>
+            </p>
+          </div>
+        </li>
+        <li>
+          <!-- 图片区域 -->
+          <div class="pic">
+            <img src="./uploads/topic2.png" alt="">
+
+            <div class="txt">
+              <div class="left">
+                <h5>吃这些美食才不算辜负自己</h5>
+                <p>餐厨起居洗护好物</p>
+              </div>
+              <div class="right">
+                ¥29.99
+              </div>
+            </div>
+          </div>
+          <!-- 说明区域 -->
+          <div class="desc">
+            <p>
+              <span>
+                <i class="iconfont icon-fabulous"></i>
+                1200
+              </span>
+              <span>
+                <i class="iconfont icon-browse"></i>
+                1800
+              </span>
+            </p>
+            <p>
+
+              <span>
+                <i class="iconfont icon-comment"></i>
+                246
+              </span>
+            </p>
+          </div>
+        </li>
+        <li>
+          <!-- 图片区域 -->
+          <div class="pic">
+            <img src="./uploads/topic3.png" alt="">
+
+            <div class="txt">
+              <div class="left">
+                <h5>吃这些美食才不算辜负自己</h5>
+                <p>餐厨起居洗护好物</p>
+              </div>
+              <div class="right">
+                ¥29.99
+              </div>
+            </div>
+          </div>
+          <!-- 说明区域 -->
+          <div class="desc">
+            <p>
+              <span>
+                <i class="iconfont icon-fabulous"></i>
+                1200
+              </span>
+              <span>
+                <i class="iconfont icon-browse"></i>
+                1800
+              </span>
+            </p>
+            <p>
+
+              <span>
+                <i class="iconfont icon-comment"></i>
+                246
+              </span>
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+~~~
+
+css
+
+~~~css
+/* 最新专题 */
+.news {
+  margin-bottom: 50px;
+}
+
+.news .bd ul li {
+  width: 405px;
+  height: 355px;
+  background-color: #fff;
+}
+
+.news .bd ul li .pic {
+  position: relative;
+  width: 405px;
+  height: 288px;
+  /* background-color: skyblue; */
+}
+
+.news .pic .txt {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 405px;
+  height: 90px;
+  /* background-color: skyblue; */
+  padding: 20px 15px 0;
+  text-align: left;
+  /* 渐变色  从红色到绿色  竖着*/
+  /* background-image: linear-gradient(red, green); */
+  /* background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.6)); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+}
+
+.news .pic .txt h5 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.news .pic .txt .left p {
+  color: #fff;
+}
+
+.news .pic .right {
+  width: 79px;
+  height: 25px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 25px;
+  color: #AA2113;
+}
+
+.news .bd .desc {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 15px;
+
+}
+
+.news .bd .desc p span {
+  color: #666;
+  font-size: 14px;
+  margin-right: 5px;
+}
+~~~
+
+
+
+
+
 
