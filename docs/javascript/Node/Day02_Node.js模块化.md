@@ -492,7 +492,7 @@ import 变量名 from '模块名或路径'
 
 ### 讲解
 
-1. npm 简介[链接]([http://dev.nodejs.cn/learn/an-introduction-to-the-npm-package-manager#npm-%E7%AE%80%E4%BB%8B](http://dev.nodejs.cn/learn/an-introduction-to-the-npm-package-manager))： 软件包管理器，用于下载和管理 Node.js 环境中的软件包
+1. npm 简介[链接](http://dev.nodejs.cn/learn/an-introduction-to-the-npm-package-manager#npm-%E7%AE%80%E4%BB%8B)： 软件包管理器，用于下载和管理 Node.js 环境中的软件包
 
    ![image-20230331155406652](images/image-20230331155406652.png)
 

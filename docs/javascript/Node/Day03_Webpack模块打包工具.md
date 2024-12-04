@@ -269,7 +269,7 @@
 
 ### 讲解
 
-1. [Webpack 配置]([https://webpack.docschina.org/concepts/#entry](https://webpack.docschina.org/concepts/))：影响 Webpack 打包过程
+1. [Webpack 配置](https://webpack.docschina.org/concepts/#entry)：影响 Webpack 打包过程
 
 2. 步骤：
 
@@ -292,7 +292,7 @@
 
    3. 重新打包观察
 
-1. 图解：
+3. 图解：
 
    ![image-20230403112150925](images/image-20230403112150925.png)
 
@@ -930,7 +930,7 @@
 
 ### 讲解
 
-1. [source map]([https://webpack.docschina.org/guides/development/#using-source-maps](https://webpack.docschina.org/guides/development/))：可以准确追踪 error 和 warning 在原始代码的位置
+1. [source map](https://webpack.docschina.org/guides/development/#using-source-maps)：可以准确追踪 error 和 warning 在原始代码的位置
 
 2. 问题：代码被压缩和混淆，无法正确定位源代码位置（行数和列数）
 
@@ -974,7 +974,7 @@
 
 ### 讲解
 
-1. [解析别名]([https://webpack.docschina.org/configuration/resolve#resolvealias](https://webpack.docschina.org/configuration/resolve))：配置模块如何解析，创建 import 或 require 的别名，来确保模块引入变得更简单
+1. [解析别名](https://webpack.docschina.org/configuration/resolve#resolvealias)：配置模块如何解析，创建 import 或 require 的别名，来确保模块引入变得更简单
 
 2. 例如：
 
