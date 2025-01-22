@@ -61,6 +61,12 @@ const config = {
           trackingID: 'G-T5R015ZCT4',
           anonymizeIP: true,
       },
+      sitemap:{
+        changefreq: 'weekly', // 更新频率
+        priority: 0.5, // 页面优先级
+        ignorePatterns: ['/blog/**'], // 忽略的路径模式
+        filename: 'sitemap.xml', // 输出文件名
+      },
     }),
     ],
   ],
@@ -94,11 +100,6 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
 
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
         ],
       },
       footer: {
@@ -110,36 +111,6 @@ const config = {
               {
                 label: 'Tutorial',
                 to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
               },
             ],
           },
