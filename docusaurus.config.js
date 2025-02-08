@@ -99,6 +99,11 @@ const config = {
             sidebarId: 'javascriptSidebar',
             label: 'JavaScript',
           },
+          {
+            type:'docSidebar',
+            sidebarId: 'readingNotesSidebar',
+            label: '读书笔记',
+          },
           {to: '/blog', label: 'Blog', position: 'left'},
 
         ],
