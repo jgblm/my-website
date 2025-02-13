@@ -126,6 +126,7 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+        additionalLanguages: ['java', 'python'],
       },
       zoom: {
         selector: '.markdown :not(em) > img',
